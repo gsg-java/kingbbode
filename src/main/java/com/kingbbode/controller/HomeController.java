@@ -1,4 +1,4 @@
-package com.kingbbode.controllers;
+package com.kingbbode.controller;
 
 import com.kingbbode.service.PortfolioService;
 import org.springframework.beans.factory.annotation.Autowired;

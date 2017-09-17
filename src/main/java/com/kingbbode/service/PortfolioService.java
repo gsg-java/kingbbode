@@ -19,8 +19,4 @@ public class PortfolioService {
     public List<Portfolio> findAll() {
         return portfolioRepository.findAll();
     }
-
-    public Portfolio findOne(Long id) {
-        return portfolioRepository.findOne(id);
-    }
 }
