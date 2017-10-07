@@ -62,14 +62,14 @@
 </header>
 
 <!-- Portfolio Grid Section -->
-<section id="portfolio">
+<section id="skill">
     <div class="container">
-        <h2 class="text-center">Portfolio</h2>
+        <h2 class="text-center">Skill</h2>
         <hr class="star-primary">
         <div class="row">
             <#list portfolios as portfolio>
                 <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" href="#portfolioModal${portfolio?counter}" data-toggle="modal">
+                    <a class="portfolio-link">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -82,6 +82,49 @@
         </div>
     </div>
 </section>
+
+<section class="success" id="activity">
+    <div class="container">
+        <h2 class="text-center">활동</h2>
+        <hr class="star-light">
+        <div class="row">
+        <#list portfolios as portfolio>
+            <div class="col-sm-4 portfolio-item">
+                <a class="portfolio-link" href="#portfolioModal${portfolio?counter}" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="${portfolio.image}" alt="">
+                </a>
+            </div>
+        </#list>
+        </div>
+    </div>
+</section>
+
+<section id="portfolio">
+    <div class="container">
+        <h2 class="text-center">주요 프로젝트</h2>
+        <hr class="star-primary">
+        <div class="row">
+        <#list portfolios as portfolio>
+            <div class="col-sm-4 portfolio-item">
+                <a class="portfolio-link" href="#portfolioModal${portfolio?counter}" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="${portfolio.image}" alt="">
+                </a>
+            </div>
+        </#list>
+        </div>
+    </div>
+</section>
+
 
 <!-- About Section -->
 <section class="success" id="about">
@@ -160,12 +203,21 @@
         <div class="container">
             <div class="row">
                 <div class="footer-col col-md-4">
-                    <h3>Location</h3>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
+                    <h3>Blog</h3>
+                    <p>
+                        <a href="">Tistory(kingbbode.tistory.com)</a>
+                        <br>
+                        <a href="">Github(kingbbode.github.io)</a>
+                    </p>
                 </div>
+                <#--
                 <div class="footer-col col-md-4">
-                    <h3>Around the Web</h3>
+                    <h3>About Freelancer</h3>
+                    <p></p>
+                </div>
+                -->
+                <div class="footer-col col-md-4">
+                    <h3>Social</h3>
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <a class="btn-social btn-outline" href="#">
@@ -174,30 +226,10 @@
                         </li>
                         <li class="list-inline-item">
                             <a class="btn-social btn-outline" href="#">
-                                <i class="fa fa-fw fa-google-plus"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-social btn-outline" href="#">
-                                <i class="fa fa-fw fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-social btn-outline" href="#">
-                                <i class="fa fa-fw fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-social btn-outline" href="#">
-                                <i class="fa fa-fw fa-dribbble"></i>
+                                <i class="fa fa-fw fa-github"></i>
                             </a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer-col col-md-4">
-                    <h3>About Freelancer</h3>
-                    <p>Freelance is a free to use, open source Bootstrap theme created by
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
                 </div>
             </div>
         </div>
@@ -206,7 +238,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    Copyright &copy; Your Website 2017
+                    Copyright &copy; kingbbode 2017
                 </div>
             </div>
         </div>
