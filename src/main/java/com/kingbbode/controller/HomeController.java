@@ -12,8 +12,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HomeController {
 
-    @Autowired
     private PortfolioService portfolioService;
+
+    @Autowired
+    public HomeController(PortfolioService portfolioService) {
+        this.portfolioService = portfolioService;
+    }
 
     @GetMapping("/")
     public String home(Model model) {
