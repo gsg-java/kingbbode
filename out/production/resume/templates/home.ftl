@@ -69,7 +69,7 @@
         <div class="row">
             <#list portfolios as portfolio>
                 <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link">
+                    <a class="portfolio-link" data-idx = "${portfolio.idx}">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -90,7 +90,7 @@
         <div class="row">
         <#list portfolios as portfolio>
             <div class="col-sm-4 portfolio-item">
-                <a class="portfolio-link" href="#portfolioModal${portfolio?counter}" data-toggle="modal">
+                <a class="portfolio-link" data-toggle="modal" data-idx = "${portfolio.idx}">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -111,7 +111,7 @@
         <div class="row">
         <#list portfolios as portfolio>
             <div class="col-sm-4 portfolio-item">
-                <a class="portfolio-link" href="#portfolioModal${portfolio?counter}" data-toggle="modal">
+                <a class="portfolio-link" data-toggle="modal" data-idx = "${portfolio.idx}">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -252,9 +252,7 @@
     </a>
 </div>
 
-<!-- Portfolio Modals -->
-<#list portfolios as portfolio>
-<div class="portfolio-modal modal fade" id="portfolioModal${portfolio?counter}" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
@@ -266,11 +264,10 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <div class="modal-body">
-                            <h2>${portfolio.title}</h2>
+                            <h2 id="portfolioModalTitle"></h2>
                             <hr class="star-primary">
-                            <img class="img-fluid img-centered" src="${portfolio.image}" alt="">
-                            <p>
-                            ${portfolio.content}
+                            <img id="portfolioModalImage" class="img-fluid img-centered" src="" alt="">
+                            <p id="portfolioModalContent">
                             </p>
                             <button class="btn btn-success" type="button" data-dismiss="modal">
                                 <i class="fa fa-times"></i>
@@ -283,7 +280,7 @@
         </div>
     </div>
 </div>
-</#list>
+
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/popper/popper.min.js"></script>
@@ -299,6 +296,19 @@
 <!-- Custom scripts for this template -->
 <script src="js/freelancer.js"></script>
 
+<script>
+    $('#page-top').on('click', '.portfolio-link', function (e) {
+        e.preventDefault();
+        $.ajax({
+            url: "/portfolios/" + $(e.currentTarget).data('idx')
+        }).done(function(response) {
+            $("#portfolioModalTitle").html(response.title);
+            $("#portfolioModalImage").attr('src', response.image);
+            $("#portfolioModalContent").html(response.content);
+            $("#portfolioModal").modal();
+        });
+    })
+</script>
 </body>
 
 </html>
