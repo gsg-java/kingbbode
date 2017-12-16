@@ -36,7 +36,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    <a class="nav-link js-scroll-trigger" href="#skill">Skill</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#activity">Activity</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#project">Project</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about">About</a>
@@ -67,30 +73,90 @@
         <h2 class="text-center">Skill</h2>
         <hr class="star-primary">
         <div class="row">
-            <#list portfolios as portfolio>
-                <div class="col-sm-4 portfolio-item">
-                    <a class="portfolio-link" data-idx = "${portfolio.idx}">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="${portfolio.image}" alt="">
-                    </a>
-                </div>
-            </#list>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/java.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/groovy.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/spring.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/boot.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/hibernate.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/tomcat.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/nginx.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/apache.jpg" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/gradle.jpg" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/maven.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/javascript.jpeg" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/jquery.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/npm.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/underscore.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/angular.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/backbone.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/webpack.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/handlebars.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/mysql.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/redis.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/aerospike.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/ubuntu.jpg" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/jenkins.png" alt="">
+            </div>
+            <div class="col-sm-3 portfolio-item" style="max-width: 25%;text-align: center;">
+                <img class="img-fluid" style="max-height: 100px;" src="img/stack/nexus.png" alt="">
+            </div>
         </div>
     </div>
 </section>
 
 <section class="success" id="activity">
     <div class="container">
-        <h2 class="text-center">활동</h2>
+        <h2 class="text-center">Activity</h2>
         <hr class="star-light">
         <div class="row">
-        <#list portfolios as portfolio>
+        <#list activities as portfolio>
             <div class="col-sm-4 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" data-idx = "${portfolio.idx}">
+                <a class="portfolio-link" data-toggle="modal" data-category ="${portfolio.category.toString()}" data-idx = "${portfolio.idx}">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -104,14 +170,14 @@
     </div>
 </section>
 
-<section id="portfolio">
+<section id="project">
     <div class="container">
-        <h2 class="text-center">주요 프로젝트</h2>
+        <h2 class="text-center">Project</h2>
         <hr class="star-primary">
         <div class="row">
-        <#list portfolios as portfolio>
+        <#list projects as portfolio>
             <div class="col-sm-4 portfolio-item">
-                <a class="portfolio-link" data-toggle="modal" data-idx = "${portfolio.idx}">
+                <a class="portfolio-link" data-toggle="modal" data-category ="${portfolio.category.toString()}" data-idx = "${portfolio.idx}">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
@@ -132,17 +198,14 @@
         <h2 class="text-center">About</h2>
         <hr class="star-light">
         <div class="row">
-            <div class="col-lg-4 ml-auto">
-                <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+            <div class="col-lg-4 mr-auto">
+                <p>만 2년차 웹 개발자로 잘하는 개발자가 되기 위해 끊임없이 노력하고 있습니다. </p>
+                <p>Java, Spring Framework, ORM, JavaScript, MySQL, Git 등을 사용하여 서비스를 개발한 경험이 있으
+                    며, 항상 더 나은 코드와, 더 나은 구조를 위해 고민하며 개발하고 있습니다. </p>
             </div>
             <div class="col-lg-4 mr-auto">
-                <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-            </div>
-            <div class="col-lg-8 mx-auto text-center">
-                <a href="#" class="btn btn-lg btn-outline">
-                    <i class="fa fa-download"></i>
-                    Download Theme
-                </a>
+                <p>실력향상을 위해 Github이나 BitBucket에서 여러 프로젝트로 연습하고 있으며, 내가 알게 된 것들을 공유하기 위해 개설한 개발 블로그는 평일 평균 200~300명 정도의 방문자들이 다녀가 고 있습니다. </p>
+                <p>빠르게 변하는 개발 트렌드에 뒤처지지 않기 위해 여러 개발 커뮤니티 활동을 흥 미롭게 보고 있으며, 얼마 전에는 좋은 기회를 얻어 한국 스프링 사용자 모임의 세미나에서 연 사로 발표를 하였습니다. 개발이 정말 재미있기에 이런 활동에 스트레스를 전혀 받지 않았고, 그 결과 다양한 기술들을 빠르게 접하고 배울 수 있게 되었습니다. </p>
             </div>
         </div>
     </div>
@@ -300,7 +363,7 @@
     $('#page-top').on('click', '.portfolio-link', function (e) {
         e.preventDefault();
         $.ajax({
-            url: "/portfolios/" + $(e.currentTarget).data('idx')
+            url: "/portfolios/" + $(e.currentTarget).data('category') + "/" + $(e.currentTarget).data('idx')
         }).done(function(response) {
             $("#portfolioModalTitle").html(response.title);
             $("#portfolioModalImage").attr('src', response.image);

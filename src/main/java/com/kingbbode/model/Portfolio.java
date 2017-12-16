@@ -1,12 +1,11 @@
 package com.kingbbode.model;
 
+import com.kingbbode.enums.Category;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * Created by YG-MAC on 2017. 9. 9..
@@ -17,13 +16,12 @@ import javax.persistence.Id;
 @Entity
 public class Portfolio {
 
-    public Portfolio(String image) {
-        this.image = image;
-    }
-
     @Id
     @GeneratedValue
     private Long idx;
+
+    @Enumerated(EnumType.STRING)
+    private Category category;
 
     private String title;
 

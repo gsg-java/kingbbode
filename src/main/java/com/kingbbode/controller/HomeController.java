@@ -15,15 +15,7 @@ import javax.annotation.PostConstruct;
 @Controller
 public class HomeController {
 
-    private PortfolioService portfolioService;
-
-    @Value("${app.version}")
-    private String appVersion;
-
-    @PostConstruct
-    public void init() {
-        System.out.println(appVersion);
-    }
+    private final PortfolioService portfolioService;
 
     @Autowired
     public HomeController(PortfolioService portfolioService) {
@@ -32,7 +24,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("portfolios", portfolioService.findAll());
+        model.addAllAttributes(portfolioService.findAll());
         return "home";
     }
 }
