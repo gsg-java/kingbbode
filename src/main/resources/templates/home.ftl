@@ -58,7 +58,7 @@
 <!-- Header -->
 <header class="masthead">
     <div class="container">
-        <img class="img-fluid" src="img/profile.png" alt="">
+        <img class="img-fluid" src="img/profile.jpg" alt="">
         <div class="intro-text">
             <span class="name">Resume</span>
             <hr class="star-light">
