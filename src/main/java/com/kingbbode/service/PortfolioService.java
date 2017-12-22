@@ -23,6 +23,7 @@ public class PortfolioService {
         Map<String, List<Portfolio>> map = new HashMap<>();
         map.put("projects", this.portfolioRepository.findAllByCategory(Category.PROJECT));
         map.put("activities", this.portfolioRepository.findAllByCategory(Category.ACTIVITY));
+        map.put("careers", this.portfolioRepository.findAllByCategory(Category.CAREER));
         return map;
     }
 }

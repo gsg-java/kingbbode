@@ -5,7 +5,8 @@ package com.kingbbode.enums;
  */
 public enum Category {
     ACTIVITY,
-    PROJECT;
+    PROJECT,
+    CAREER;
 
 
     @Override

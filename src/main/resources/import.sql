@@ -10,3 +10,6 @@ INSERT INTO PORTFOLIO (IDX, CATEGORY, TITLE, CONTENT, IMAGE) VALUES (8, 'ACTIVIT
 INSERT INTO PORTFOLIO (IDX, CATEGORY, TITLE, CONTENT, IMAGE) VALUES (9, 'ACTIVITY', '양파지기 스터디','패스트 캠퍼스 인연들이 모여 진행한 스터디!<br>(2017.02~2017.11)','img/portfolio/activity/yangpa.jpg');
 INSERT INTO PORTFOLIO (IDX, CATEGORY, TITLE, CONTENT, IMAGE) VALUES (10, 'ACTIVITY', '줌인터넷 세미나','사내 세미나 발표<br>(2017.03)','img/portfolio/activity/zuminternet.jpg');
 INSERT INTO PORTFOLIO (IDX, CATEGORY, TITLE, CONTENT, IMAGE) VALUES (11, 'ACTIVITY', '스프링 캠프 2017','스프링 부트를 대하는 자세 발표<br>(2017.04)','img/portfolio/activity/springcamp.jpg');
+
+INSERT INTO PORTFOLIO (IDX, CATEGORY, TITLE, CONTENT, IMAGE) VALUES (12, 'CAREER', '줌인터넷','~~<br>(2015.09~2017.12)','img/portfolio/career/zum.png');
+INSERT INTO PORTFOLIO (IDX, CATEGORY, TITLE, CONTENT, IMAGE) VALUES (13, 'CAREER', '우아한형제들','~~~<br>(2018.01 ~ )','img/portfolio/career/woowa.png');

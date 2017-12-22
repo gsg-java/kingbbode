@@ -45,10 +45,10 @@
                     <a class="nav-link js-scroll-trigger" href="#project">Project</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                    <a class="nav-link js-scroll-trigger" href="#career">Career</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                    <a class="nav-link js-scroll-trigger" href="#about">About</a>
                 </li>
             </ul>
         </div>
@@ -191,13 +191,33 @@
     </div>
 </section>
 
-
-<!-- About Section -->
-<section class="success" id="about">
+<section class="success" id="career">
     <div class="container">
-        <h2 class="text-center">About</h2>
+        <h2 class="text-center">Career</h2>
         <hr class="star-light">
         <div class="row">
+        <#list careers as portfolio>
+            <div class="col-sm-4 portfolio-item">
+                <a class="portfolio-link" data-toggle="modal" data-category ="${portfolio.category.toString()}" data-idx = "${portfolio.idx}">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img class="img-fluid" src="${portfolio.image}" alt="">
+                </a>
+            </div>
+        </#list>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about">
+    <div class="container">
+        <h2 class="text-center">About</h2>
+        <hr class="star-primary">
+        <div class="row" style="text-align: center;">
             <div class="col-lg-4 mr-auto">
                 <p>만 2년차 웹 개발자로 잘하는 개발자가 되기 위해 끊임없이 노력하고 있습니다. </p>
                 <p>Java, Spring Framework, ORM, JavaScript, MySQL, Git 등을 사용하여 서비스를 개발한 경험이 있으
@@ -206,55 +226,6 @@
             <div class="col-lg-4 mr-auto">
                 <p>실력향상을 위해 Github이나 BitBucket에서 여러 프로젝트로 연습하고 있으며, 내가 알게 된 것들을 공유하기 위해 개설한 개발 블로그는 평일 평균 200~300명 정도의 방문자들이 다녀가 고 있습니다. </p>
                 <p>빠르게 변하는 개발 트렌드에 뒤처지지 않기 위해 여러 개발 커뮤니티 활동을 흥 미롭게 보고 있으며, 얼마 전에는 좋은 기회를 얻어 한국 스프링 사용자 모임의 세미나에서 연 사로 발표를 하였습니다. 개발이 정말 재미있기에 이런 활동에 스트레스를 전혀 받지 않았고, 그 결과 다양한 기술들을 빠르게 접하고 배울 수 있게 되었습니다. </p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <div class="container">
-        <h2 class="text-center">Contact Me</h2>
-        <hr class="star-primary">
-        <div class="row">
-            <div class="col-lg-8 mx-auto">
-                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                <form name="sentMessage" id="contactForm" novalidate>
-                    <div class="control-group">
-                        <div class="form-group floating-label-form-group controls">
-                            <label>Name</label>
-                            <input class="form-control" id="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="form-group floating-label-form-group controls">
-                            <label>Email Address</label>
-                            <input class="form-control" id="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="form-group floating-label-form-group controls">
-                            <label>Phone Number</label>
-                            <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <div class="control-group">
-                        <div class="form-group floating-label-form-group controls">
-                            <label>Message</label>
-                            <textarea class="form-control" id="message" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
-                            <p class="help-block text-danger"></p>
-                        </div>
-                    </div>
-                    <br>
-                    <div id="success"></div>
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
